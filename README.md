@@ -44,27 +44,26 @@ MoonPhase mp(time_t time);
 * time:		The time of the desired the moon phase and position, in GMT seconds from
 		the Unix epoch (January 1, 1970).  
 
-		As the moon phase changes slowly and precision within a few
-		hours is not likely necessary for most applications, using
-		the time provided by the Arduino now(), which will be the
-		time in seconds from January 1, 1970 in your local time
-		zone, should be fine.  
+As the moon phase changes slowly and precision within a few hours is not
+likely necessary for most applications, using the time provided by the Arduino
+now(), which will be the time in seconds from January 1, 1970 in your local
+time zone, should be fine.
 
 ### Returned values
-* double jDate		The fractional Julian date for *time*.
+* double jDate:		The fractional Julian date for *time*.
 
-* double phase	      	The phase of the moon, from 0 (new) to 0.5 (full) to 1.0 new).
+* double phase:	      	The phase of the moon, from 0 (new) to 0.5 (full) to 1.0 new).
 
-* double age		Age in days of current cycle.
+* double age:		Age in days of current cycle.
 
-* double fraction	The illumination fraction, from 0% - 100%.
+* double fraction:	The illumination fraction, from 0% - 100%.
 
-* double distance	Moon distance in earth radii.
+* double distance:	Moon distance in earth radii.
 
-* double latitude	Moon ecliptic latitude in degrees.
+* double latitude:	Moon ecliptic latitude in degrees.
 
-* double longitude	Moon ecliptic longitude in degrees.
+* double longitude:	Moon ecliptic longitude in degrees.
 
-* const char *phaseName The name of the moon phase: New, Full, etc.
+* const char *phaseName: The name of the moon phase: New, Full, etc.
 
-* const char *zodiacName The name of the Zodiac constellation the moon is in.
+* const char *zodiacName: The name of the Zodiac constellation the moon is in.
