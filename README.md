@@ -50,20 +50,29 @@ using the time provided by the Arduino now(), which will be the time in
 seconds from January 1, 1970 in your local time zone, should be fine.
 
 ### Returned values
-* double jDate:		The fractional Julian date for *time*.
+* double mp.jDate;  
+The fractional Julian date for *time*.
 
-* double phase:	      	The phase of the moon, from 0 (new) to 0.5 (full) to 1.0 (new).
+* double mp.phase;  
+The phase of the moon, from 0 (new) to 0.5 (full) to 1.0 (new).
 
-* double age:		Age in days of the current cycle.
+* double mp.age;  
+Age in days of the current cycle.
 
-* double fraction:	The illumination fraction, from 0% - 100%.
+* double mp.fraction;  
+The illumination fraction, from 0% - 100%.
 
-* double distance:	Moon distance in earth radii.
+* double mp.distance;  
+Moon distance in earth radii.
 
-* double latitude:	Moon ecliptic latitude in degrees.
+* double mp.latitude;  
+Moon ecliptic latitude in degrees.
 
-* double longitude:	Moon ecliptic longitude in degrees.
+* double mp.longitude;  
+Moon ecliptic longitude in degrees.
 
-* const char *phaseName: The name of the moon phase: New, Full, etc.
+* const char * mp.phaseName;  
+The name of the moon phase: New, Full, etc.
 
-* const char *zodiacName: The name of the Zodiac constellation the moon is in.
+* const char * mp.zodiacName;  
+The name of the Zodiac constellation the moon is in.
