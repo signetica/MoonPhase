@@ -5,7 +5,7 @@ C++ class for calculating the phase and position of the moon for Unix, Linux, Ar
 Calculate the phase and position of the moon for a given date.
 
 ## Synopsis
-Determine the phase of the moon and its the ecliptic coordinates (ecliptic
+Determine the phase of the moon and its ecliptic coordinates (ecliptic
 latitude, ecliptic longitude, and distance) for the specified time in seconds
 since the Unix epoch (January 1, 1970).  The name of the moon phase (New, Full, etc.)
 and the name of the Zodiac constellation the moon is in are also provided.
