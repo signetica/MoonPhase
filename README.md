@@ -41,13 +41,11 @@ April 1994, page 84, written by Bradley E. Schaefer.
 MoonPhase mp(time_t time);
 
 ### Arguments
-* time:		The time of the desired the moon phase and position, in GMT seconds from
-		the Unix epoch (January 1, 1970).
-		As the moon phase changes slowly and precision within a few
-		hours is not likely necessary for most applications, using the
-		time provided by the Arduino now(), which will be the time in
-		seconds from January 1, 1970 in your local time zone, should
-		be fine.
+* time: The time of the desired the moon phase and position, in GMT seconds from
+the Unix epoch (January 1, 1970).  As the moon phase changes slowly and
+precision within a few hours is not likely necessary for most applications,
+using the time provided by the Arduino now(), which will be the time in
+seconds from January 1, 1970 in your local time zone, should be fine.
 
 ### Returned values
 * double jDate:		The fractional Julian date for *time*.
