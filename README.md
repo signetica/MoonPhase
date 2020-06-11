@@ -18,7 +18,7 @@ Arduino processors) there is a special version of the software included in
 this distribution (MoonPhaseFXP, for Floating X Precision) that avoids exceeding the
 available precision.
 
-To paraphrase the original author Bradley E Schaefer,
+To paraphrase the original author Bradley E Schaefer:
 
 		I can only think of one application where lunar phase is needed to a
 		hundredth of a day, whereas nearly all applications are happy to have
