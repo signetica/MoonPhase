@@ -7,7 +7,7 @@
 #define MOON_DISTANCE_OFFSET  2451562.2
 #define MOON_LATITUDE_PERIOD  27.212220817   // Latitude oscillation
 #define	MOON_LATITUDE_OFFSET  2451565.2
-#define MOON_LONGITUDE_PERIOD 27.321582241   // Longitude osillation
+#define MOON_LONGITUDE_PERIOD 27.321582241   // Longitude oscillation
 #define	MOON_LONGITUDE_OFFSET 2451555.8
 
 class MoonPhase {
