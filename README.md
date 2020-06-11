@@ -41,8 +41,7 @@ April 1994, page 84, written by Bradley E. Schaefer.
 MoonPhase mp(time_t time);
 
 ### Arguments
-* time:  
-The time of the desired the moon phase and position, in GMT seconds from
+* time:The time of the desired the moon phase and position, in GMT seconds from
 the Unix epoch (January 1, 1970).  
 As the moon phase changes slowly and
 precision within a few hours is not likely necessary for most applications,
