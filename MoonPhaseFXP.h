@@ -10,9 +10,9 @@
 #define MOON_LONGITUDE_PERIOD 27.321582241   // Longitude oscillation
 #define	MOON_LONGITUDE_OFFSET 2451555.8
 
-class MoonPhase {
+class MoonPhaseFXP {
   public:
-    long jDay;
+    double jDate;
     double phase;	      // 0 - 1, 0.5 = full
     double age;		      // Age in days of current cycle
     double fraction;	      // Fraction of illuminated disk
@@ -22,7 +22,7 @@ class MoonPhase {
     const char *phaseName;    // New, Full, etc.
     const char *zodiacName;   // Constellation 
 
-    MoonPhase(time_t);
+    MoonPhaseFXP(time_t);
 
   private:
 };

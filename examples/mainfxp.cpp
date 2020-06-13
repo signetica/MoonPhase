@@ -16,14 +16,14 @@ int main(int argc, char *argv[]) {
     t = atol(argv[1]);
 
   // Calculate the moon phase and related information.
-  MoonPhase m(t);
+  MoonPhaseFXP m(t);
 
   printf("Time:\t\t\t%s", ctime(&t));
-  printf("Julian Day:\t\t%ld\nPhase:\t\t\t%.2f\nAge:\t\t\t%.2f\n"
+  printf("Julian Day:\t\t%.2f\nPhase:\t\t\t%.2f\nAge:\t\t\t%.2f\n"
 	 "Illumination Fraction:\t%.2f\n"
 	 "Distance:\t\t%.2f earth radii\nEcliptic Latitude:\t%.2f\n"
 	 "Ecliptic Longitude:\t%.2f\n",
-	 m.jDay, m.phase, m.age, m.fraction, m.distance, m.latitude, m.longitude);
+	 m.jDate, m.phase, m.age, m.fraction, m.distance, m.latitude, m.longitude);
   printf("Lunar Phase:\t\t%s\n", m.phaseName);
   printf("Lunar Zodiac Transit:\t%s\n", m.zodiacName);
 

@@ -50,8 +50,9 @@ double julianDateFrac(time_t t) {
 }
 
 // Determine the Moon Phase and orbital positions for the specified time.
-MoonPhase::MoonPhase(time_t t) {
-  jDay = julianDay(t);
+MoonPhaseFXP::MoonPhaseFXP(time_t t) {
+  long jDay = julianDay(t);
+  jDate = jDay;
   double jDateFrac = julianDateFrac(t);
 
   // Calculate illumination (synodic) phase.
