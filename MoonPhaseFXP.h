@@ -1,5 +1,5 @@
-#ifndef MoonPhase_h
-#define MoonPhase_h
+#ifndef MoonPhaseFXP_h
+#define MoonPhaseFXP_h
 
 #define MOON_SYNODIC_PERIOD   29.530588853   // Period of moon cycle in days.
 #define	MOON_SYNODIC_OFFSET   2451550.26     // Reference cycle offset in days.
