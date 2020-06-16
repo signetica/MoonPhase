@@ -36,7 +36,8 @@ double julianDate(time_t t) {
 }
 
 // Determine the Moon Phase and orbital positions for the specified time.
-MoonPhase::MoonPhase(time_t t) {
+void
+MoonPhase::calculate(time_t t) {
   jDate = julianDate(t);
 
   // Calculate illumination (synodic) phase.

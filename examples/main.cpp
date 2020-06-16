@@ -16,7 +16,8 @@ int main(int argc, char *argv[]) {
     t = atol(argv[1]);
 
   // Calculate the moon phase and related information.
-  MoonPhase m(t);
+  MoonPhase m;
+  m.calculate(t);
 
   printf("Time:\t\t\t%s", ctime(&t));
   printf("Julian Day:\t\t%.2f\nPhase:\t\t\t%.2f\nAge:\t\t\t%.2f\n"

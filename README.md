@@ -43,8 +43,11 @@ To use the MoonPhase library, include MoonPhase.h
 	#include <MoonPhaseFXP.h>		// (for 4-byte double precision)
 
 ### Detailed synopsis
-	MoonPhase mp(time_t time);
-	MoonPhaseFXP mp(time_t time);		// (for 4-byte double precision)
+	MoonPhase mp;
+	mp.calculate(time_t time);
+
+	MoonPhaseFXP mp;
+	mp.calculate(time_t time);		// (for 4-byte double precision)
 
 ### Arguments
 	time:	// The time of the desired the moon phase and position, in UTC

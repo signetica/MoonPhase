@@ -50,7 +50,8 @@ double julianDateFrac(time_t t) {
 }
 
 // Determine the Moon Phase and orbital positions for the specified time.
-MoonPhaseFXP::MoonPhaseFXP(time_t t) {
+void
+MoonPhaseFXP::calculate(time_t t) {
   long jDay = julianDay(t);
   jDate = jDay;
   double jDateFrac = julianDateFrac(t);
