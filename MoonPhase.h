@@ -1,6 +1,8 @@
 #ifndef MoonPhase_h
 #define MoonPhase_h
 
+#include <time.h>
+
 #define MOON_SYNODIC_PERIOD   29.530588853   // Period of moon cycle in days.
 #define	MOON_SYNODIC_OFFSET   2451550.26     // Reference cycle offset in days.
 #define MOON_DISTANCE_PERIOD  27.55454988    // Period of distance oscillation

@@ -13,7 +13,6 @@
 // that you agree that the author(s) have no warranty, obligations or liability.  You
 // must determine the suitability of this source code for your use.
 
-#include <time.h>
 #include <math.h>
 #include "MoonPhaseFXP.h"
 
