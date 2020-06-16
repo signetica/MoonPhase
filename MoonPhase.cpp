@@ -3,7 +3,7 @@
 //
 // This software was originally adapted to javascript by Stephen R. Schmitt
 // from a BASIC program from the 'Astronomical Computing' column of Sky & Telescope,
-// April 1994, page 84, written by Bradley E. Schaefer.
+// April 1994, page 86, written by Bradley E. Schaefer.
 //
 // Subsequently adapted from Stephen R. Schmitt's javascript to c++ for the Arduino
 // by Cyrus Rahman, this work is subject to Stephen Schmitt's copyright:
