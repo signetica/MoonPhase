@@ -29,7 +29,8 @@ static const float zodiacAngles[] = {33.18, 51.16, 93.44, 119.48, 135.30, 173.34
 				     224.17, 242.57, 271.26, 302.49, 311.72, 348.58};
 
 // Determine Julian day from Unix time.
-long julianDay(time_t t) {
+long
+MoonPhaseFXP::julianDay(time_t t) {
   return ((long)((t / 86400.0L) + 0.5) + 2440587);
 }
 
@@ -42,7 +43,8 @@ double julianDate(time_t t) {
 #endif
 
 // Return the fractional Julian Date, e.g. fraction of day after 1200UTC.
-double julianDateFrac(time_t t) {
+double
+MoonPhaseFXP::julianDateFrac(time_t t) {
   double f = t / 86400.0L + 0.5;
   f -= floor(f);
   return (f);

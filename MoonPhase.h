@@ -28,5 +28,6 @@ class MoonPhase {
     void calculate(time_t);
 
   private:
+    double julianDate(time_t);
 };
 #endif

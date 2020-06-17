@@ -28,5 +28,7 @@ class MoonPhaseFXP {
     void calculate(time_t);
 
   private:
+    long julianDay(time_t);
+    double julianDateFrac(time_t);
 };
 #endif

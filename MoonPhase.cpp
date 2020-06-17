@@ -30,7 +30,8 @@ static const float zodiacAngles[] = {33.18, 51.16, 93.44, 119.48, 135.30, 173.34
 
 // Determine Julian date from Unix time.
 // Provides marginally accurate results with older Arduino 4-byte double.
-double julianDate(time_t t) {
+double
+MoonPhase::julianDate(time_t t) {
   return (t / 86400.0L + 2440587.5);
 }
 
