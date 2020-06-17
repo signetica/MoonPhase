@@ -34,6 +34,18 @@ double julianDate(time_t t) {
   return (t / 86400.0L + 2440587.5);
 }
 
+// Initialize the class data
+MoonPhase::MoonPhase() {
+  jDate = 0;
+  phase = 0;
+  age = 0;
+  fraction = 0;
+  distance = 0;
+  latitude = 0;
+  longitude = 0;
+  phaseName = zodiacName = "";
+}
+
 // Determine the Moon Phase and orbital positions for the specified time.
 void
 MoonPhase::calculate(time_t t) {

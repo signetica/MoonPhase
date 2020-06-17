@@ -48,6 +48,18 @@ double julianDateFrac(time_t t) {
   return (f);
 }
 
+// Initialize the class.
+MoonPhaseFXP::MoonPhaseFXP() {
+  jDate = 0;
+  phase = 0;
+  age = 0;
+  fraction = 0;
+  distance = 0;
+  latitude = 0;
+  longitude = 0;
+  phaseName = zodiacName = "";
+}
+
 // Determine the Moon Phase and orbital positions for the specified time.
 void
 MoonPhaseFXP::calculate(time_t t) {

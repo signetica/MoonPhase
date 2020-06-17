@@ -24,6 +24,7 @@ class MoonPhase {
     const char *phaseName;    // New, Full, etc.
     const char *zodiacName;   // Constellation 
 
+    MoonPhase();
     void calculate(time_t);
 
   private:
