@@ -27,30 +27,7 @@ static const char *zodiacNames[] = {"Pisces", "Aries", "Taurus", "Gemini", "Canc
 // Ecliptic angles of Zodiac constellations
 static const float zodiacAngles[] = {33.18, 51.16, 93.44, 119.48, 135.30, 173.34,
 				     224.17, 242.57, 271.26, 302.49, 311.72, 348.58};
-
-// Determine Julian day from Unix time.
-long
-MoonPhaseFXP::julianDay(time_t t) {
-  return ((long)((t / 86400.0L) + 0.5) + 2440587);
-}
-
-#ifdef notdef
-// Determine Julian date from Unix time.
-// Provides marginally accurate results with older Arduino 4-byte double.
-double julianDate(time_t t) {
-  return (t / 86400.0L + 2440587.5);
-}
-#endif
-
-// Return the fractional Julian Date, e.g. fraction of day after 1200UTC.
-double
-MoonPhaseFXP::julianDateFrac(time_t t) {
-  double f = t / 86400.0L + 0.5;
-  f -= floor(f);
-  return (f);
-}
-
-// Initialize the class.
+// Constructor initialiation.
 MoonPhaseFXP::MoonPhaseFXP() {
   jDate = 0;
   phase = 0;
@@ -122,4 +99,26 @@ MoonPhaseFXP::calculate(time_t t) {
       break;
     }
   }
+}
+
+// Determine Julian day from Unix time.
+long
+MoonPhaseFXP::julianDay(time_t t) {
+  return ((long)((t / 86400.0L) + 0.5) + 2440587);
+}
+
+#ifdef notdef
+// Determine Julian date from Unix time.
+// Provides marginally accurate results with older Arduino 4-byte double.
+double julianDate(time_t t) {
+  return (t / 86400.0L + 2440587.5);
+}
+#endif
+
+// Return the fractional Julian Date, e.g. fraction of day after 1200UTC.
+double
+MoonPhaseFXP::julianDateFrac(time_t t) {
+  double f = t / 86400.0L + 0.5;
+  f -= floor(f);
+  return (f);
 }
