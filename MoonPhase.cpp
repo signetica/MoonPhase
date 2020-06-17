@@ -34,7 +34,7 @@ double julianDate(time_t t) {
   return (t / 86400.0L + 2440587.5);
 }
 
-// Initialize the class data
+// Initialize the class.
 MoonPhase::MoonPhase() {
   jDate = 0;
   phase = 0;
