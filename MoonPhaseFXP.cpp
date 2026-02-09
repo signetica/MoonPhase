@@ -9,6 +9,7 @@
 // by Cyrus Rahman, this work is subject to Stephen Schmitt's copyright:
 //
 // Copyright 2004 Stephen R. Schmitt
+// Subsequent work Copyright 2000-2026 Cyrus Rahman
 // You may use or modify this source code in any way you find useful, provided
 // that you agree that the author(s) have no warranty, obligations or liability.  You
 // must determine the suitability of this source code for your use.
