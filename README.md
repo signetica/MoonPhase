@@ -33,7 +33,7 @@ To paraphrase the original author Bradley E. Schaefer:
 
 This software was originally adapted to javascript by Stephen R. Schmitt
 from a BASIC program from the 'Astronomical Computing' column of Sky & Telescope,
-April 1994, page 84, written by Bradley E. Schaefer.
+April 1994, page 86, written by Bradley E. Schaefer.
 
 ## Usage
 
