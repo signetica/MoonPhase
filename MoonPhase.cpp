@@ -37,7 +37,8 @@ MoonPhase::MoonPhase() {
   distance = 0;
   latitude = 0;
   longitude = 0;
-  phaseName = zodiacName = "";
+  phaseName = phaseNames[0];
+  zodiacName = zodiacNames[0];
 }
 
 // Determine the Moon Phase and orbital positions for the specified time.

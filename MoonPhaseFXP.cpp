@@ -27,7 +27,7 @@ static const char *zodiacNames[] = {"Pisces", "Aries", "Taurus", "Gemini", "Canc
 // Ecliptic angles of Zodiac constellations
 static const float zodiacAngles[] = {33.18, 51.16, 93.44, 119.48, 135.30, 173.34,
 				     224.17, 242.57, 271.26, 302.49, 311.72, 348.58};
-// Constructor initialiation.
+// Constructor initialization.
 MoonPhaseFXP::MoonPhaseFXP() {
   jDate = 0;
   phase = 0;
@@ -36,7 +36,8 @@ MoonPhaseFXP::MoonPhaseFXP() {
   distance = 0;
   latitude = 0;
   longitude = 0;
-  phaseName = zodiacName = "";
+  phaseName = phaseNames[0];
+  zodiacName = zodiacNames[0];
 }
 
 // Determine the Moon Phase and orbital positions for the specified time.
