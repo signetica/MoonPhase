@@ -1,16 +1,5 @@
 #  Copyright and Sources of Reference Materials
 
-### Van_Flandern_&_Pulkkinen-1979.pdf
-
-### LOW-PRECISION FORMULAE FOR PLANETARY POSITIONS
-Written by T. C. Van Flandern and K. F. Pulkkinen
-US Naval Observatory, Washington DC
-Copyright 1979 The American Astronomical Society
-
-Available as of February 2026 at
- https://adsabs.harvard.edu/full/1979ApJS...41..391V
- 
----
 ### moonfx.bas
 Published by Sky & Telescope, written by Bradley Schaefer
 
